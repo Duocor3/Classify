@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Gallery">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:clickable="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#00ffffff"
+            android:id="@+id/clickout"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBodyAccent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="53dp"
+                    android:background="#36529b"
+                    android:textColor="@color/colorText"
+                    android:textAllCaps="false"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:id="@+id/title"
+                    android:text="Settings"/>
+
+                <ImageButton
+                    android:id="@+id/backButton"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:background="@drawable/deleteclicked"
+                    android:src="@mipmap/baseline_arrow_back_white_24"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Switch
+                        android:id="@+id/autoSort"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/instructionbutton"
+                        android:paddingLeft="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingEnd="8dp"
+
+
+
+
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:text="Autosort"
+                        android:textColor="#535353"
+                        android:layout_margin="8dp"
+                        android:switchPadding="@dimen/fab_margin"
+                        app:layout_anchorGravity="left|bottom"
+                        android:layout_marginBottom="8dp" />
+
+                    <Switch
+                        android:id="@+id/backup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/instructionbutton"
+                        android:paddingLeft="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:checked="false"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:switchPadding="@dimen/fab_margin"
+                        android:text="Backup to Gallery"
+                        android:textColor="#535353"
+                        app:layout_anchorGravity="left|bottom"
+                        android:layout_marginBottom="8dp" />
+
+                    <Switch
+                        android:id="@+id/togglenotifs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/instructionbutton"
+                        android:paddingLeft="8dp"
+                        android:paddingStart="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingEnd="8dp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:checked="true"
+                        android:gravity="center"
+                        android:layout_margin="8dp"
+                        android:switchPadding="@dimen/fab_margin"
+                        android:text="Notifications"
+                        android:textColor="#535353"
+                        app:layout_anchorGravity="left|bottom"
+                        android:layout_marginBottom="8dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/properties_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchorGravity="bottom|center">
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBody"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.AppBarLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="375dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginStart="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/scrollLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/layout1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <Button
+                                android:id="@+id/period1"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/clicked"
+                                android:textColor="@color/colorText"
+                                android:layout_weight="1"
+                                android:textAllCaps="false"
+                                android:text="Period 1" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <Button
+                                android:id="@+id/period2"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/clicked"
+                                android:textColor="@color/colorText"
+                                android:layout_weight="1"
+                                android:textAllCaps="false"
+                                android:text="Period 2" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <Button
+                                android:id="@+id/period3"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/clicked"
+                                android:textColor="@color/colorText"
+                                android:layout_weight="1"
+                                android:textAllCaps="false"
+                                android:text="Period 3" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <Button
+                                android:id="@+id/period4"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/clicked"
+                                android:textColor="@color/colorText"
+                                android:layout_weight="1"
+                                android:textAllCaps="false"
+                                android:text="Period 4" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <Button
+                                android:id="@+id/period5"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/clicked"
+                                android:textColor="@color/colorText"
+                                android:layout_weight="1"
+                                android:textAllCaps="false"
+                                android:text="Period 5" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <Button
+                                android:id="@+id/period6"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/clicked"
+                                android:textColor="@color/colorText"
+                                android:layout_weight="1"
+                                android:textAllCaps="false"
+                                android:text="Period 6" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <Button
+                                android:id="@+id/period7"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/clicked"
+                                android:textColor="@color/colorText"
+                                android:layout_weight="1"
+                                android:textAllCaps="false"
+                                android:text="Period 7" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/defaultlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp">
+
+                            <Button
+                                android:id="@+id/defaultFolder"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/clicked"
+                                android:textColor="@color/colorText"
+                                android:layout_weight="1"
+                                android:textAllCaps="false"
+                                android:text="Temp Folder" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignParentBottom="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/instructionbutton"
+                    android:id="@+id/instructions"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="33dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    android:text="Take pictures of your school assignments"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="vertical"
+                    android:background="#47889e">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:layout_alignParentBottom="true">
+
+                        <ImageButton
+                            android:id="@+id/settings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#569fb9"
+                            android:gravity="end"
+                            android:layout_weight="0.1"
+                            android:padding="4dp"
+                            android:scaleType="fitCenter"
+                            android:tint="#dfdfdf"
+                            android:src="@drawable/baseline_settings_applications_white_24dp" />
+
+                        <ImageButton
+                            android:id="@+id/fab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_camera_alt_white_24dp"
+                            android:paddingTop="3dp"
+                            android:tint="#dfdfdf"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"
+                            android:background="@color/colorPrimary"
+                            android:layout_weight="0.8"
+                            android:textColor="@color/colorText" />
+
+                        <ImageButton
+                            android:id="@+id/edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="#569fb9"
+                            android:gravity="end"
+                            android:layout_weight="0.1"
+                            android:scaleType="fitCenter"
+                            android:padding="4dp"
+                            android:tint="#dfdfdf"
+                            android:src="@drawable/baseline_edit_white_24dp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</android.support.design.widget.CoordinatorLayout>
+

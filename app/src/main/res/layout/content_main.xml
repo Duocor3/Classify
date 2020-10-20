@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/card"
+    android:background="@drawable/button">
+
+        <TextView
+            android:id="@+id/txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_margin="8dp"
+            android:textColor="@color/colorText"
+            android:textSize="10sp" />
+
+        <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:id="@+id/imageview"
+            android:adjustViewBounds="true"
+            android:background="#47889e"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            app:panEnabled="false"
+            app:zoomEnabled="false"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/cardbottom"
+            android:background="@drawable/button">
+
+                <ImageButton
+                    android:id="@+id/zoom"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button"
+                    android:textColor="@color/colorText"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:tint="#dfdfdf"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/baseline_zoom_in_white_24dp"/>
+
+                <ImageButton
+                    android:id="@+id/delete"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/button"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingStart="4dp"
+                    android:paddingEnd="4dp"
+                    android:tint="#dfdfdf"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/baseline_delete_white_24dp"/>
+
+        </RelativeLayout>
+
+</LinearLayout>

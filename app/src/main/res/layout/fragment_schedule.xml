@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Gallery"
+    android:background="@color/colorBody"
+    android:focusable="true"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="#36529b"
+        android:textColor="@color/colorText"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:id="@+id/title"
+        android:text="Schedule"/>
+
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="53dp"
+        android:layout_height="53dp"
+        android:background="@drawable/deleteclicked"
+        android:src="@mipmap/baseline_arrow_back_white_24"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/helpLayout"
+        android:layout_marginTop="55dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/instructionbutton"
+                    android:orientation="vertical"
+                    android:id="@+id/infolayout">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/info"/>
+
+                </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+<FrameLayout
+        android:id="@+id/properties_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</android.support.design.widget.CoordinatorLayout>
